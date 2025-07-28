@@ -1,0 +1,154 @@
+/*
+Theme Name: Vorfolio Child
+Theme URI: 
+Author: 
+Author URI: 
+Description: 
+Requires at least: 6.7
+Tested up to: 6.7
+Requires PHP: 5.7
+Version: 
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Template: vorfolio
+Text Domain: vorfolio-child
+Tags: 
+*/
+.main-menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  align-items: flex-start;
+}
+
+.main-menu li a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.main-menu li a:hover {
+  background-color: #F48500;
+}
+            .devacademie-user-menu  {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 9999;
+/*                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+            }
+
+            .devacademie-user-menu .initiale {
+                background: linear-gradient(135deg, #320065, #f48500);
+                color: white;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                font-size: 18px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+				 margin-left: 100px;
+            }
+
+            .devacademie-user-menu .initiale:hover {
+                transform: scale(1.1) rotate(3deg);
+            }
+
+            .devacademie-user-menu .dropdown {
+                display: none;
+                position: absolute;
+                right: 0;
+                margin-top: 10px;
+                background: #ffffff;
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+                border-radius: 10px;
+                min-width: 260px;
+                overflow: hidden;
+                transition: all 0.3s ease;
+                z-index: 10000;
+                text-align: left;
+            }
+
+            .devacademie-user-menu .dropdown .user-email {
+                padding: 12px 20px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #666;
+                border-bottom: 1px solid #eee;
+                word-break: break-word;
+            }
+
+            .devacademie-user-menu .dropdown a {
+                display: block;
+                padding: 12px 20px;
+                color: #320065;
+                text-decoration: none;
+                font-size: 15px;
+                font-weight: 600;
+                border-left: 4px solid transparent;
+                transition: all 0.2s ease;
+            }
+
+            .devacademie-user-menu .dropdown a:hover {
+                background-color: #f3edfc;
+                border-left: 4px solid #f48500;
+                padding-left: 24px;
+                color: #1f003f;
+            }
+
+
+/* Style général des boutons sociaux */
+.social-login-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: 10px auto;
+  padding: 10px 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background 0.3s ease;
+}
+
+.social-login-btn:hover {
+  background: #f5f5f5;
+}
+
+.social-login-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Affichage vertical + responsive */
+@media screen and (max-width: 768px) {
+  .social-login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+
+
+
+

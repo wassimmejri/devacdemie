@@ -1,0 +1,312 @@
+
+
+body {
+  background-color: #f0f4f8;
+}
+
+.navbar {
+  background-color: #2c3e50;
+}
+
+h1, h2, h3 {
+  color: #0073aa;
+}
+
+.btn-primary {
+  background-color: #0073aa;
+  border-color: #0073aa;
+}
+button, 
+.btn {
+    background-color: #f48500 !important; /* Orange Tangerine */
+    color: #ffffff !important; /* Texte en blanc */
+    font-weight: bold !important; /* Texte en gras */
+    border: none; /* Supprime la bordure si nécessaire */
+    transition: background-color 0.3s ease-in-out;
+}
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-brand:focus, 
+.navbar-brand:active {
+    color: white !important;
+}
+
+
+button:hover, 
+.btn:hover {
+    background-color: #f48500 !important; /* Reste orange même au survol */
+    color: #ffffff !important; /* Texte en blanc */
+    font-weight: bold !important; /* Toujours en gras */
+}
+
+
+
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #3d6d9d;
+    text-align: left;
+    background-color: #fff;
+}
+#login-wrapper {
+  /* ... autres styles ... */
+  box-shadow: 0 0 20px 5px purple;
+  border-radius: 15px; /* Ajustez cette valeur pour contrôler l'arrondi */
+}
+#page-login-index {
+  box-shadow: 0 0 20px 5px purple; /* Exemple de box-shadow */
+}
+div#topofscroll {
+    box-shadow: 10px 20px 3px #d5761c;
+}
+body {
+        font-family : 'Noto Sans', sans-serif ;
+        font-size : 16px ;
+}
+
+/* Centrer les boutons horizontalement */
+.login-buttons {
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    align-items: center;     /* Centre les boutons verticalement */
+    flex-direction: column;  /* Aligne les boutons les uns sous les autres */
+    margin-top: 20px;        /* Espace au-dessus des boutons */
+}
+
+/* Optionnel: Ajouter un peu d'espace entre les boutons */
+.login-buttons button {
+    margin: 5px 0; /* Ajoute un espacement vertical entre les boutons */
+}
+/* Masquer le texte et le formulaire d'accès en tant qu'anonyme */
+#guestlogin, .login-heading, #loginguestbtn {
+    display: none !important;
+}
+h1 {
+  text-align: center;
+}
+
+a[href*="forgot_password.php"]::before {
+    content: "Mot de passe oublié";
+    visibility: visible;
+}
+a[href*="forgot_password.php"] {
+    visibility: hidden;
+}
+hr {
+    display: none;
+}
+.loginbox, .loginpanel, .loginform, form, fieldset, div {
+    border: none !important;
+    box-shadow: none !important;
+}
+.loginform .login-buttons {
+    display: flex !important;
+    flex-direction: row !important; /* Aligner horizontalement */
+    justify-content: space-between !important; /* Espacement entre les boutons */
+    align-items: center !important; /* Centrage vertical */
+}
+
+.loginform .login-buttons input[type="submit"], 
+.loginform .login-buttons a {
+    width: 48% !important; /* Ajuste la taille des boutons */
+    text-align: center !important;
+}
+
+
+
+   
+/* Navbar par défaut */
+.navbar {
+    background-color: #320065 !important; /* Changer la couleur principale en #320065 */
+
+    box-shadow: 0px 6px 12px rgba(112, 61, 209, 0.3) !important; /* Ombre subtile */
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+/* Liens dans la navbar */
+.navbar a {
+    color: #FFFFFF !important; /* Couleur des liens en blanc */
+    font-weight: bold !important; /* Mise en gras des liens */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet au survol des liens */
+.navbar a:hover {
+    color: rgba(50, 0, 101, 0.8) !important; /* Même couleur avec 80% d'opacité lors du survol */
+background-color: #320065 !important;
+}
+
+
+.coursebox {
+    border: 3px solid #703DD1 !important; /* Bordure avec ta couleur */
+    border-radius: 10px !important; /* Coins arrondis */
+    padding: 10px !important; /* Espacement intérieur */
+    transition: all 0.3s ease-in-out; /* Effet fluide */
+}
+
+.coursebox:hover {
+    box-shadow: 0px 6px 12px rgba(112, 61, 209, 0.3) !important; /* Ombre élégante au survol */
+    transform: scale(1.02); /* Effet léger d'agrandissement */
+}
+.dropdown-menu {
+    background-color: #f48500 !important; /* Fond blanc */
+    border: none !important; /* Suppression de la bordure */
+}
+
+.dropdown-menu .dropdown-item {
+    color: #FF9800 !important; /* Texte orange */
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: rgba(255, 152, 0, 0.2) !important; /* Fond orange clair au survol */
+}
+
+.hidden {
+    display: none;
+}
+//je cacher le boutton connexion réel par ce css
+.navbar-nav .nav-item:last-child {
+    display: none; /* Masque le dernier élément de la barre de navigation */
+}
+h1 {
+    font-size: 3rem !important; /* Augmente la taille du h1 */
+text-align: center !important; /* Centrage */
+}
+
+h2 {
+    font-size: 2.5rem !important; /* Augmente la taille du h2 */
+text-align: center !important; /* Centrage */
+}
+h1, h2, h3, h4 {
+    color: #320065 !important; /* Violet */
+}
+.navbar .nav-links .logout {
+    border: 2px solid white !important;  /* Bordure blanche */
+    color: white !important;              /* Texte blanc par défaut */
+    padding: 8px 12px;                     /* Espacement interne */
+    border-radius: 5px;                    /* Coins arrondis */
+    transition: all 0.3s ease;              /* Animation fluide */
+    background-color: transparent !important; /* Fond transparent */
+    text-decoration: none;                  /* Supprimer soulignement éventuel */
+}
+
+.navbar .nav-links .logout:hover {
+    background-color: white !important;  /* Fond blanc au survol */
+    color: #320065 !important;            /* Texte violet */
+}
+
+.navbar .nav-links .logout:active {
+    background-color: transparent !important; /* Fond transparent au clic */
+    color: #320065 !important;               /* Texte violet au clic */
+    border: 2px solid white !important;      /* Bordure blanche forcée */
+}
+.dropdown-menu {
+    background-color: white !important; /* Fond blanc */
+    border: none !important; /* Suppression de la bordure */
+}
+
+.dropdown-menu .dropdown-item {
+    color: #FF9800 !important; /* Texte orange */
+}
+
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: rgba(255, 152, 0, 0.2) !important; /* Fond orange clair au survol */
+}
+/* Modification de la couleur du texte des liens de la navbar */
+.navbar-nav .nav-link {
+    color: white !important; /* Texte blanc par défaut */
+}
+
+/* Changer la couleur de l'élément actif */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #FF9800 !important; /* Texte orange au survol et actif */
+}
+
+/* Style du menu déroulant */
+.dropdown-menu {
+    background-color: #703DD1 !important; /* Fond violet */
+
+}
+
+/* Changer la couleur des éléments du menu déroulant */
+.dropdown-menu .dropdown-item {
+    color: white !important; /* Texte blanc */
+}
+
+/* Changer la couleur des éléments du menu déroulant au survol */
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+    background-color: rgba(255, 152, 0, 0.2) !important; /* Fond orange clair */
+    color: #FF9800 !important; /* Texte orange */
+}
+/* Suppression de la bordure et ajustement du fond */
+.dropdown-menu {
+    background-color: #703DD1 !important; /* Fond violet */
+    border: none !important; /* Supprime la bordure */
+    box-shadow: none !important; /* Supprime toute ombre */
+    padding: 0 !important; /* Supprime l'espace intérieur */
+    margin: 0 !important; /* Supprime l'espace extérieur */
+}
+
+/* Ajustement du texte et suppression du fond blanc */
+.dropdown-item {
+    color: white !important; /* Texte blanc */
+    background-color: transparent !important; /* Supprime le fond blanc */
+}
+
+/* Au survol, appliquer un fond violet clair */
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: rgba(255, 152, 0, 0.2) !important; /* Fond orange clair */
+    color: #FF9800 !important; /* Texte orange */
+}
+.courses-container {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si besoin */
+    justify-content: space-around; /* Ajuste l'espacement */
+    gap: 15px; /* Espace entre les cartes */
+}
+
+.courses.frontpage-course-list-all {
+    display: flex;
+    flex-wrap: wrap;  /* Permet d'aller à la ligne si nécessaire */
+    gap: 20px;  /* Espacement entre les cours */
+    justify-content: center; /* Centre les cours */
+}
+
+.courses.frontpage-course-list-all .coursebox {
+    width: calc(33.33% - 20px); /* Ajuste pour 3 cours par ligne */
+    max-width: 350px; /* Pour éviter des cours trop larges sur grands écrans */
+    border: 2px solid #6a0dad; /* Bordure violette */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.courses.frontpage-course-list-all .coursebox:hover {
+    transform: scale(1.05); /* Effet au survol */
+}
+.navbar-brand {
+    color: white !important;
+}
+
+.navbar-brand:focus, 
+.navbar-brand:active, 
+.navbar-brand:hover {
+    color: white !important;
+}
+

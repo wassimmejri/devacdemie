@@ -1,0 +1,205 @@
+0000.020 (0) Opened log file at time: Mon, 05 May 2025 03:17:56 +0000 on https://www.devacademie.org
+0000.022 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8.1 PHP: 8.1.32 (litespeed, Linux plaf.o2switch.net 4.18.0-553.30.1.lve.el8.x86_64 #1 SMP Tue Dec 3 01:21:19 UTC 2024 x86_64) MySQL: 10.6.21-MariaDB (max packet size=1073741824) WPLANG: fr_FR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 9.8M | 12M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.114 (0) Free space on disk containing Updraft's temporary directory: 354575.2 MB
+0000.116 (0) Tasks: Backup files: 1 (schedule: daily) Backup DB:  (schedule: daily)
+0000.116 (0) Processed schedules. Combining jobs from identical schedules. Tasks now: Backup files: 1 Backup DB: 1
+0000.122 (0) Requesting semaphore lock (fd) (apparently via scheduler: last_scheduled_action_called_at=1746329273, seconds_ago=85804)
+0000.123 (0) Set semaphore last lock (fd) time to 2025-05-05 03:17:57
+0000.123 (0) Semaphore lock (fd) complete
+0000.126 (0) Backup run: resumption=0, nonce=d336be183225, file_nonce=d336be183225 begun at=1746415076 (1s ago), job type=backup
+0000.127 (0) Scheduling a resumption (1) after 300 seconds (1746415377) in case this run gets aborted
+0000.186 (0) Checking if we have a zip executable available
+0000.186 (0) Testing: /usr/bin/zip
+0000.200 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.201 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.201 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.202 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.202 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.210 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.211 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.244 (0) Working binary zip found: /usr/bin/zip
+0000.245 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.246 (0) Creation of backups of directories: beginning
+0000.248 (0) No backup of plugins: excluded by user's options
+0000.248 (0) No backup of themes: excluded by user's options
+0000.249 (0) No backup of uploads: excluded by user's options
+0000.250 (0) No backup of mu-plugins: excluded by user's options
+0000.250 (0) No backup of others: excluded by user's options
+0000.252 (0) Saving backup status to database (elements: 0)
+0000.282 (0) Beginning creation of database dump (WordPress DB)
+0000.282 (0) Couldn't get the sql_mode value (N;); will not attempt any adjustment
+0000.284 (0) Testing potential mysqldump binary: /usr/bin/mysqldump
+0000.307 (0) Output: /*M!999999\- enable the sandbox mode */ \n/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;\n/*!40103 SET TIME_ZONE='+00:00' */;\n/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;\n/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;\n/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;\n/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;\nDROP TABLE IF EXISTS `wpb4_options`;\n/*!40101 SET @saved_cs_client     = @@character_set_client */;\n/*!40 (truncated - 1507 bytes total)
+0000.308 (0) Working binary mysqldump found: /usr/bin/mysqldump
+0000.318 (0) Table wpb4_options: Total expected rows (via COUNT): 496
+0000.319 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.544 (0) Table wpb4_options: Rows added in this batch (next record: 15515): 492 (uncompressed bytes in this segment=3702974) in 0.23 seconds
+0000.547 (0) Table wpb4_options: finishing file(s) (2, 533.3 KB)
+0000.550 (0) Table wpb4_users: Total expected rows (via COUNT): 23
+0000.551 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.553 (0) Table wpb4_users: Rows added in this batch (next record: 48): 23 (uncompressed bytes in this segment=5461) in 0.00 seconds
+0000.555 (0) Table wpb4_users: finishing file(s) (2, 2.6 KB)
+0000.561 (0) Table wpb4_usermeta: Total expected rows (via COUNT): 758
+0000.562 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.568 (0) Table wpb4_usermeta: Rows added in this batch (next record: 1363): 758 (uncompressed bytes in this segment=65091) in 0.01 seconds
+0000.571 (0) Table wpb4_usermeta: finishing file(s) (2, 11.9 KB)
+0000.576 (0) Table wpb4_actionscheduler_actions: Total expected rows (via COUNT): 22
+0000.576 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.578 (0) Table wpb4_actionscheduler_actions: Rows added in this batch (next record: 6539): 22 (uncompressed bytes in this segment=11636) in 0.01 seconds
+0000.580 (0) Table wpb4_actionscheduler_actions: finishing file(s) (2, 1.5 KB)
+0000.583 (0) Table wpb4_actionscheduler_claims: Total expected rows (via COUNT): 0
+0000.584 (0) Table wpb4_actionscheduler_claims: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=638) in 0.00 seconds
+0000.585 (0) Table wpb4_actionscheduler_claims: finishing file(s) (2, 0.4 KB)
+0000.588 (0) Table wpb4_actionscheduler_groups: Total expected rows (via COUNT): 3
+0000.588 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.589 (0) Table wpb4_actionscheduler_groups: Rows added in this batch (next record: 3): 3 (uncompressed bytes in this segment=717) in 0.00 seconds
+0000.591 (0) Table wpb4_actionscheduler_groups: finishing file(s) (2, 0.4 KB)
+0000.593 (0) Table wpb4_actionscheduler_logs: Total expected rows (via COUNT): 54
+0000.594 (0) Table is relatively small; fetch_rows will thus be: 100 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.595 (0) Table wpb4_actionscheduler_logs: Rows added in this batch (next record: 16191): 54 (uncompressed bytes in this segment=5523) in 0.00 seconds
+0000.597 (0) Table wpb4_actionscheduler_logs: finishing file(s) (2, 1 KB)
+0000.608 (0) Table wpb4_commentmeta: Total expected rows (via COUNT): 0
+0000.609 (0) Table wpb4_commentmeta: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=646) in 0.01 seconds
+0000.611 (0) Table wpb4_commentmeta: finishing file(s) (2, 0.4 KB)
+0000.614 (0) Table wpb4_comments: Total expected rows (via COUNT): 1
+0000.614 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.616 (0) Table wpb4_comments: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1896) in 0.00 seconds
+0000.617 (0) Table wpb4_comments: finishing file(s) (2, 0.7 KB)
+0000.620 (0) Table wpb4_links: Total expected rows (via COUNT): 0
+0000.621 (0) Table wpb4_links: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=1039) in 0.00 seconds
+0000.622 (0) Table wpb4_links: finishing file(s) (2, 0.5 KB)
+0000.627 (0) Table wpb4_postmeta: Total expected rows (via COUNT): 751
+0000.627 (0) Table is relatively small; fetch_rows will thus be: 500 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0000.636 (0) Table wpb4_postmeta: Rows added in this batch (next record: 1447): 751 (uncompressed bytes in this segment=149912) in 0.01 seconds
+0000.638 (0) Table wpb4_postmeta: finishing file(s) (2, 16.8 KB)
+0000.651 (0) Table wpb4_posts: Total expected rows (approximate): 1308
+0001.374 (0) Table wpb4_posts: Rows added in this batch (next record: 1283): 1051 (uncompressed bytes in this segment=29390779) in 0.73 seconds
+0001.377 (0) Table wpb4_posts: finishing file(s) (2, 2474.7 KB)
+0001.379 (0) Table wpb4_term_relationships: Total expected rows (approximate): 37
+0001.380 (0) Table wpb4_term_relationships: Rows added in this batch (next record: 100000): 37 (uncompressed bytes in this segment=1227) in 0.00 seconds
+0001.382 (0) Table wpb4_term_relationships: finishing file(s) (2, 0.5 KB)
+0001.385 (0) Table wpb4_term_taxonomy: Total expected rows (via COUNT): 12
+0001.386 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.387 (0) Table wpb4_term_taxonomy: Rows added in this batch (next record: 12): 12 (uncompressed bytes in this segment=1257) in 0.00 seconds
+0001.389 (0) Table wpb4_term_taxonomy: finishing file(s) (2, 0.6 KB)
+0001.400 (0) Table wpb4_termmeta: Total expected rows (via COUNT): 2
+0001.400 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.401 (0) Table wpb4_termmeta: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=739) in 0.01 seconds
+0001.403 (0) Table wpb4_termmeta: finishing file(s) (2, 0.4 KB)
+0001.405 (0) Table wpb4_terms: Total expected rows (via COUNT): 12
+0001.406 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.407 (0) Table wpb4_terms: Rows added in this batch (next record: 12): 12 (uncompressed bytes in this segment=1031) in 0.00 seconds
+0001.408 (0) Table wpb4_terms: finishing file(s) (2, 0.5 KB)
+0001.411 (0) Table wpb4_frm_fields: Total expected rows (via COUNT): 13
+0001.412 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.413 (0) Table wpb4_frm_fields: Rows added in this batch (next record: 15): 13 (uncompressed bytes in this segment=13858) in 0.00 seconds
+0001.415 (0) Table wpb4_frm_fields: finishing file(s) (2, 1.8 KB)
+0001.419 (0) Table wpb4_frm_forms: Total expected rows (via COUNT): 2
+0001.419 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.420 (0) Table wpb4_frm_forms: Rows added in this batch (next record: 2): 2 (uncompressed bytes in this segment=3836) in 0.00 seconds
+0001.422 (0) Table wpb4_frm_forms: finishing file(s) (2, 1.3 KB)
+0001.425 (0) Table wpb4_frm_item_metas: Total expected rows (via COUNT): 28
+0001.426 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.427 (0) Table wpb4_frm_item_metas: Rows added in this batch (next record: 28): 28 (uncompressed bytes in this segment=2479) in 0.00 seconds
+0001.429 (0) Table wpb4_frm_item_metas: finishing file(s) (2, 0.9 KB)
+0001.432 (0) Table wpb4_frm_items: Total expected rows (via COUNT): 4
+0001.432 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.434 (0) Table wpb4_frm_items: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=2438) in 0.00 seconds
+0001.435 (0) Table wpb4_frm_items: finishing file(s) (2, 0.8 KB)
+0001.438 (0) Table wpb4_frmt_form_entry: Total expected rows (via COUNT): 4
+0001.438 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.439 (0) Table wpb4_frmt_form_entry: Rows added in this batch (next record: 4): 4 (uncompressed bytes in this segment=1100) in 0.00 seconds
+0001.441 (0) Table wpb4_frmt_form_entry: finishing file(s) (2, 0.5 KB)
+0001.444 (0) Table wpb4_frmt_form_entry_meta: Total expected rows (via COUNT): 32
+0001.444 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.446 (0) Table wpb4_frmt_form_entry_meta: Rows added in this batch (next record: 32): 32 (uncompressed bytes in this segment=3840) in 0.00 seconds
+0001.448 (0) Table wpb4_frmt_form_entry_meta: finishing file(s) (2, 0.9 KB)
+0001.452 (0) Table wpb4_frmt_form_reports: Total expected rows (via COUNT): 1
+0001.452 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.454 (0) Table wpb4_frmt_form_reports: Rows added in this batch (next record: 1): 1 (uncompressed bytes in this segment=1342) in 0.00 seconds
+0001.456 (0) Table wpb4_frmt_form_reports: finishing file(s) (2, 0.7 KB)
+0001.459 (0) Table wpb4_frmt_form_views: Total expected rows (via COUNT): 25
+0001.459 (0) Table is relatively small; fetch_rows will thus be: 50 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.461 (0) Table wpb4_frmt_form_views: Rows added in this batch (next record: 25): 25 (uncompressed bytes in this segment=2838) in 0.00 seconds
+0001.462 (0) Table wpb4_frmt_form_views: finishing file(s) (2, 0.8 KB)
+0001.465 (0) Table wpb4_moodle_enrollment: Total expected rows (via COUNT): 6
+0001.466 (0) Table is relatively small; fetch_rows will thus be: 20 (allow_further_reductions=1, is_first_fetch=1, known_bigger_than_table=1)
+0001.467 (0) Table wpb4_moodle_enrollment: Rows added in this batch (next record: 6): 6 (uncompressed bytes in this segment=1231) in 0.00 seconds
+0001.469 (0) Table wpb4_moodle_enrollment: finishing file(s) (2, 0.5 KB)
+0001.472 (0) Table wpb4_social_users: Total expected rows (via COUNT): 0
+0001.473 (0) Table wpb4_social_users: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=723) in 0.00 seconds
+0001.475 (0) Table wpb4_social_users: finishing file(s) (2, 0.4 KB)
+0001.478 (0) Table wpb4_um_metadata: Total expected rows (via COUNT): 0
+0001.479 (0) Table wpb4_um_metadata: Rows added in this batch (next record: -1): 0 (uncompressed bytes in this segment=681) in 0.00 seconds
+0001.481 (0) Table wpb4_um_metadata: finishing file(s) (2, 0.4 KB)
+0001.482 (0) PHP event: code E_WARNING: filemtime(): stat failed for /home/sc3ighb1166/devacademie.org/wp-content/updraft/backup_2025-05-05-0317_Devcadmie_d336be183225-db.gz (line 1923, wp-content/plugins/updraftplus/backup.php)
+0001.483 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_options.table.tmpr15516.gz (1/27/fopen): adding to final database dump
+0001.490 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_options.table.gz (2/27/fopen): adding to final database dump
+0001.490 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_users.table.tmpr49.gz (3/27/fopen): adding to final database dump
+0001.491 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_users.table.gz (4/27/fopen): adding to final database dump
+0001.491 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_usermeta.table.tmpr1364.gz (5/27/fopen): adding to final database dump
+0001.492 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_usermeta.table.gz (6/27/fopen): adding to final database dump
+0001.492 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_actionscheduler_actions.table.tmpr6540.gz (7/27/fopen): adding to final database dump
+0001.493 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_actionscheduler_actions.table.gz (8/27/fopen): adding to final database dump
+0001.493 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_actionscheduler_claims.table.tmpr0.gz (9/27/fopen): adding to final database dump
+0001.493 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_actionscheduler_claims.table.gz (10/27/fopen): adding to final database dump
+0001.494 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_actionscheduler_groups.table.tmpr4.gz (11/27/fopen): adding to final database dump
+0001.494 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_actionscheduler_groups.table.gz (12/27/fopen): adding to final database dump
+0001.495 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_actionscheduler_logs.table.tmpr16192.gz (13/27/fopen): adding to final database dump
+0001.495 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_actionscheduler_logs.table.gz (14/27/fopen): adding to final database dump
+0001.495 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_commentmeta.table.tmpr0.gz (15/27/fopen): adding to final database dump
+0001.496 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_commentmeta.table.gz (16/27/fopen): adding to final database dump
+0001.496 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_comments.table.tmpr2.gz (17/27/fopen): adding to final database dump
+0001.497 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_comments.table.gz (18/27/fopen): adding to final database dump
+0001.497 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_links.table.tmpr0.gz (19/27/fopen): adding to final database dump
+0001.498 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_links.table.gz (20/27/fopen): adding to final database dump
+0001.498 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_postmeta.table.tmpr1448.gz (21/27/fopen): adding to final database dump
+0001.499 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_postmeta.table.gz (22/27/fopen): adding to final database dump
+0001.499 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_posts.table.tmpr1284.gz (23/27/fopen): adding to final database dump
+0001.529 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_posts.table.gz (24/27/fopen): adding to final database dump
+0001.529 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_term_relationships.table.tmpr100001.gz (25/27/fopen): adding to final database dump
+0001.530 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_term_relationships.table.gz (26/27/fopen): adding to final database dump
+0001.530 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_term_taxonomy.table.tmpr13.gz (27/27/fopen): adding to final database dump
+0001.531 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_term_taxonomy.table.gz (28/27/fopen): adding to final database dump
+0001.531 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_termmeta.table.tmpr3.gz (29/27/fopen): adding to final database dump
+0001.532 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_termmeta.table.gz (30/27/fopen): adding to final database dump
+0001.532 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_terms.table.tmpr13.gz (31/27/fopen): adding to final database dump
+0001.533 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_terms.table.gz (32/27/fopen): adding to final database dump
+0001.533 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frm_fields.table.tmpr16.gz (33/27/fopen): adding to final database dump
+0001.534 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frm_fields.table.gz (34/27/fopen): adding to final database dump
+0001.534 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frm_forms.table.tmpr3.gz (35/27/fopen): adding to final database dump
+0001.535 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frm_forms.table.gz (36/27/fopen): adding to final database dump
+0001.535 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frm_item_metas.table.tmpr29.gz (37/27/fopen): adding to final database dump
+0001.536 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frm_item_metas.table.gz (38/27/fopen): adding to final database dump
+0001.536 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frm_items.table.tmpr5.gz (39/27/fopen): adding to final database dump
+0001.537 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frm_items.table.gz (40/27/fopen): adding to final database dump
+0001.537 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frmt_form_entry.table.tmpr5.gz (41/27/fopen): adding to final database dump
+0001.538 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frmt_form_entry.table.gz (42/27/fopen): adding to final database dump
+0001.538 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frmt_form_entry_meta.table.tmpr33.gz (43/27/fopen): adding to final database dump
+0001.538 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frmt_form_entry_meta.table.gz (44/27/fopen): adding to final database dump
+0001.539 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frmt_form_reports.table.tmpr2.gz (45/27/fopen): adding to final database dump
+0001.539 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frmt_form_reports.table.gz (46/27/fopen): adding to final database dump
+0001.540 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frmt_form_views.table.tmpr26.gz (47/27/fopen): adding to final database dump
+0001.540 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_frmt_form_views.table.gz (48/27/fopen): adding to final database dump
+0001.540 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_moodle_enrollment.table.tmpr7.gz (49/27/fopen): adding to final database dump
+0001.541 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_moodle_enrollment.table.gz (50/27/fopen): adding to final database dump
+0001.541 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_social_users.table.tmpr0.gz (51/27/fopen): adding to final database dump
+0001.542 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_social_users.table.gz (52/27/fopen): adding to final database dump
+0001.542 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_um_metadata.table.tmpr0.gz (53/27/fopen): adding to final database dump
+0001.542 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db-table-wpb4_um_metadata.table.gz (54/27/fopen): adding to final database dump
+0001.546 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db.gz: finished writing out complete database file (3055.3 KB)
+0001.623 (0) Total database tables backed up: 27 (backup_2025-05-05-0317_Devcadmie_d336be183225-db.gz, size: 3128771, sha1: 132b178aa05d3c58c44cbde06fe32747654bf5e6, sha256: 30e042bff5bc8ab23a4c95f6417c9eaf9d697be7c4e336e109bcc2f0e5e7743d)
+0001.630 (0) backup_2025-05-05-0317_Devcadmie_d336be183225-db.gz: db: This file has not yet been successfully uploaded: will queue
+0001.630 (0) Saving backup history. Total backup size: 3 MB
+0001.633 (0) Requesting upload of the files that have not yet been successfully uploaded (1)
+0001.635 (0) Cloud backup selection (1/1): none with instance (1/1) (last)
+0001.636 (0) No remote despatch: user chose no remote backup service
+0001.636 (0) Recording as successfully uploaded: backup_2025-05-05-0317_Devcadmie_d336be183225-db.gz
+0001.638 (0) Prune old backups from local store: nothing to do, since the user disabled local deletion and we are using local backups
+0001.638 (0) Resume backup (d336be183225, 0): finish run
+0001.639 (0) Decremented the semaphore (fd) by 1
+0001.640 (0) Semaphore (fd) unlocked
+0001.641 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0001.643 (0) The backup succeeded and is now complete
+0001.644 (0) No email will/can be sent - the user has not configured an email address.
+0001.644 (0) La sauvegarde a réussi et est maintenant terminée

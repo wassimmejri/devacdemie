@@ -1,0 +1,11 @@
+:root {
+    --MediumVioletRed: #AC197F;
+    --Navy: #000038;
+    --Gri_cendre: #c6c7c5;
+    --Orange_tangerine: #F48500;
+    --Violet_tres_fonce: #320065;
+}
+
+body {
+    background-color: var(--MediumVioletRed);
+}

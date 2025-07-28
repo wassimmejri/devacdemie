@@ -1,0 +1,73 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent noir */
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 40px; /* Ajuste la taille du logo */
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar .nav-links li {
+    display: inline-block;
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+    color: #ff9800; /* Orange au survol */
+background-color: #320065 !important;
+}
+
+
+.navbar .contact-btn {
+    background-color: #ff9800;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar .contact-btn:hover {
+    background-color: #e68900;
+}
+
+
+
+
+/* Effet au survol de la navbar */
+.navbar:hover {
+    box-shadow: 0px 8px 16px rgba(112, 61, 209, 0.5) !important; /* Effet au survol avec une ombre plus marquée */
+} 

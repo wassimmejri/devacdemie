@@ -1,0 +1,43 @@
+/* Conteneur icônes */
+.custom-course-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+/* Éléments de liste */
+.custom-course-block li {
+    padding: 9px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 20px; /* Réduction ici (était 30px) */
+}
+
+/* Icônes absolues */
+.custom-course-block li::before {
+    font-family: 'Font Awesome 6 Free';
+    position: absolute;
+    left: 0;
+    font-weight: 800;
+}
+
+/* Icônes spécifiques */
+.custom-course-block li:nth-child(1)::before {
+    content: "\f023"; /* cadenas */
+    color: #e74c3c;
+}
+.custom-course-block li:nth-child(2)::before {
+    content: "\f017"; /* horloge */
+    color: #3498db;
+}
+.custom-course-block li:nth-child(3)::before {
+    content: "\f0a3"; /* certificat */
+    color: #2ecc71;
+}
+
+/* Police Font Awesome */
+@font-face {
+  font-family: 'Font Awesome 6 Free';
+  src: url('../fontawesome/webfonts/fa-solid-900.woff2') format('woff2');
+}

@@ -1,0 +1,9 @@
+# Ignore les fichiers temporaires
+*.log
+*.tmp
+*.env
+/vendor/
+/node_modules/
+/wordpress/wp-content/uploads/
+/wordpress/wp-config.php
+ForMax_Code source/devacademie.org/moodledata_outlying_formax/cache/

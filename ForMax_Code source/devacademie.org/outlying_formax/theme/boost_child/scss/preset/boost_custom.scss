@@ -1,0 +1,52 @@
+// Import de Bootstrap & Fontawesome comme dans Boost
+@import "bootstrap";
+@import "fontawesome";
+
+// Styles personnalisés du thème parent Boost
+
+// ----- Navbar -----
+.navbar {
+  background-color: $navbar-bg;
+  min-height: 3.5rem;
+}
+.navbar-brand {
+  font-weight: bold;
+}
+
+// ----- Buttons -----
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+}
+.btn-primary {
+  color: #fff;
+  background-color: $primary;
+}
+
+// ----- Card -----
+.card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card-header {
+  background-color: $card-header-bg;
+}
+
+// ----- Login page -----
+.loginbox {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+// ----- Course content -----
+.course-content {
+  margin-top: 1rem;
+}
+.activity {
+  border-left: 4px solid $primary;
+}
+
+// ----- Moodle core -----
+@import "moodle"; // Ceci permet d'hériter aussi des autres éléments natifs Moodle

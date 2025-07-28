@@ -1,0 +1,65 @@
+// Quiz : Introduction à Java EE
+
+::Q1:: Quelle est la fonction principale d'une Servlet en Java EE ?
+{
+=Traiter les requêtes HTTP côté serveur
+~Générer du HTML côté client
+~Gérer la base de données directement
+~Servir de navigateur web
+}
+
+::Q2:: Quelle extension de fichier est associée aux fichiers JSP ?
+{
+=.jsp
+~.html
+~.java
+~.xml
+}
+
+::Q3:: Quel objet contient les paramètres d'une requête HTTP dans une Servlet ?
+{
+=HttpServletRequest
+~HttpServletResponse
+~ServletContext
+~HttpSession
+}
+
+::Q4:: Dans une architecture MVC en Java EE, quel composant joue souvent le rôle de contrôleur ?
+{
+=Servlet
+~JSP
+~JavaBean
+~JDBC
+}
+
+::Q5:: Lequel des éléments suivants est un composant EJB ?
+{
+=Session Bean
+~Servlet
+~JSP
+~JDBC
+}
+
+::Q6:: Le fichier de configuration web standard dans une application Java EE est :
+{
+=web.xml
+~config.properties
+~application.properties
+~server.xml
+}
+
+::Q7:: JDBC est utilisé pour :
+{
+=Accéder aux bases de données relationnelles
+~Gérer les fichiers XML
+~Communiquer avec les web services
+~Créer des interfaces graphiques
+}
+
+::Q8:: Quel est le but de l’annotation @WebServlet ?
+{
+=Déclarer une servlet sans utiliser web.xml
+~Déclarer un bean EJB
+~Configurer une base de données
+~Déclarer un filtre
+}

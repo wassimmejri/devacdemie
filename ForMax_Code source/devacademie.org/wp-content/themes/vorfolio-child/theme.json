@@ -1,0 +1,30 @@
+{
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"color": "#fff",
+					"name": "Variable Color #1",
+					"slug": "qsbsTs"
+				},
+				{
+					"color": "#ffffff",
+					"name": "Variable Color #320065",
+					"slug": "rE9xLX"
+				},
+				{
+					"color": "#fff",
+					"name": "Variable Color #320066",
+					"slug": "rici1o"
+				}
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--fifth)"
+		}
+	},
+	"version": 3,
+	"$schema": "https://schemas.wp.org/wp/6.7/theme.json"
+}

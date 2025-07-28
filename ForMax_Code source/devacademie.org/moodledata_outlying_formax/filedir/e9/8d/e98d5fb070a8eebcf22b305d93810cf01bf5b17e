@@ -1,0 +1,6 @@
+
+//<![CDATA[
+(function() {M.util.help_popups.setup(Y);
+ M.util.js_pending('random67c6de8a89cc59'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random67c6de8a89cc59'); });
+})();
+//]]>

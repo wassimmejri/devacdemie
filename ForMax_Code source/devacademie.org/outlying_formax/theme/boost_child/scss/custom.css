@@ -1,0 +1,20 @@
+
+
+body {
+  background-color: #f0f4f8;
+}
+
+.navbar {
+  background-color: #2c3e50;
+}
+
+h1, h2, h3 {
+  color: #0073aa;
+}
+
+.btn-primary {
+  background-color: #0073aa;
+  border-color: #0073aa;
+}
+
+

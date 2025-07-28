@@ -1,0 +1,47 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const loginLink = document.querySelector('a[href*="/login/index.php"]');
+  if (!loginLink) return;
+
+  const originalUrl = loginLink.href;
+
+  loginLink.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const email = prompt("Veuillez entrer votre adresse e-mail pour continuer :");
+    if (!email || email.trim() === "") {
+      alert("Adresse e-mail requise.");
+      return;
+    }
+
+    fetch(`/outlying_formax/verifyuser.php?email=${encodeURIComponent(email)}`)
+      .then(res => {
+        if (!res.ok) {
+          throw new Error('Erreur réseau : ' + res.status);
+        }
+        return res.json();
+      })
+      .then(data => {
+        console.log('Réponse verifyuser:', data);
+
+        // Vérifie si email n'existe pas dans Moodle OU WordPress
+        if (!data.exists_in_moodle || !data.exists_in_wp) {
+          alert("⚠️ Vous devez vous inscrire d'abord sur DevAcademie.");
+          window.location.href = "https://www.devacademie.org/connexion/";
+          return;
+        }
+
+        // Si on reçoit la clé is_admin, autorise toujours (tu peux adapter ici si besoin)
+        if (data.is_admin) {
+          window.location.href = originalUrl;
+          return;
+        }
+
+        // Email existe dans Moodle ET WordPress, accès normal
+        window.location.href = originalUrl;
+      })
+      .catch(err => {
+        console.error("Erreur lors de la vérification :", err);
+        alert("Une erreur est survenue : " + err.message);
+      });
+  });
+});

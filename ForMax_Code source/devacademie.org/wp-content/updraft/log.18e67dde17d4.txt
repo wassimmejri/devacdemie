@@ -1,0 +1,125 @@
+0000.002 () Opened log file at time: Wed, 07 May 2025 23:15:39 +0000 on https://www.devacademie.org
+0000.002 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8.1 PHP: 8.1.32 (litespeed, Linux plaf.o2switch.net 4.18.0-553.30.1.lve.el8.x86_64 #1 SMP Tue Dec 3 01:21:19 UTC 2024 x86_64) MySQL: 10.6.21-MariaDB (max packet size=1073741824) WPLANG: fr_FR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 13M | 14M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.073 () Free space on disk containing Updraft's temporary directory: 348132.4 MB
+0000.451 () Restore setup, now closing connection and starting restore over AJAX.
+0000.002 () Opened log file at time: Wed, 07 May 2025 23:15:40 +0000 on https://www.devacademie.org
+0000.002 () UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.25.5 WP: 6.8.1 PHP: 8.1.32 (litespeed, Linux plaf.o2switch.net 4.18.0-553.30.1.lve.el8.x86_64 #1 SMP Tue Dec 3 01:21:19 UTC 2024 x86_64) MySQL: 10.6.21-MariaDB (max packet size=1073741824) WPLANG: fr_FR Server: Apache safe_mode: 0 max_execution_time: 900 memory_limit: 512M (used: 11.4M | 12M) multisite: N openssl: OpenSSL 1.1.1w  11 Sep 2023 mcrypt: N LANG:  WP Proxy: disabled ZipArchive::addFile: Y
+0000.072 () Free space on disk containing Updraft's temporary directory: 348132.1 MB
+0000.073 () Ensuring WP_Filesystem is setup for a restore
+0000.073 () WP_Filesystem is setup and ready for a restore
+0000.076 () Restore job started. Entities to restore: db. Restore options: {"include_unspecified_tables":false,"tables_to_restore":["wpb4_options","wpb4_users","wpb4_usermeta","wpb4_actionscheduler_actions","wpb4_actionscheduler_claims","wpb4_actionscheduler_groups","wpb4_actionscheduler_logs","wpb4_commentmeta","wpb4_comments","wpb4_links","wpb4_postmeta","wpb4_posts","wpb4_term_relationships","wpb4_term_taxonomy","wpb4_termmeta","wpb4_terms","wpb4_frm_fields","wpb4_frm_forms","wpb4_frm_item_metas","wpb4_frm_items","wpb4_frmt_form_entry","wpb4_frmt_form_entry_meta","wpb4_frmt_form_reports","wpb4_frmt_form_views","wpb4_moodle_enrollment","wpb4_social_users","wpb4_um_metadata"],"tables_to_skip":[],"updraft_encryptionphrase":"","updraft_restorer_wpcore_includewpconfig":false,"updraft_incremental_restore_point":-1}
+0000.077 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.097 () Entity: db
+0000.097 () restore_backup(backup_file=backup_2025-05-06-0304_Devcadmie_6020dba4b0bd-db.gz, type=db, info=a:0:{}, last_one=1)
+0000.097 () Décompression de la sauvegarde… (backup_2025-05-06-0304_Devcadmie_6020dba4b0bd-db.gz, 3 Mb)
+0000.097 () PHP event: code E_WARNING: mkdir(): File exists (line 558, wp-admin/includes/class-wp-filesystem-direct.php)
+0000.102 () Database successfully unpacked
+0000.102 () Restauration de la base de données (cela peut prendre du temps si votre site est volumineux - en cas de dépassement de délai (ce qui arrive si votre hébergeur limite vos ressources), vous devrez utiliser une autre méthode comme phpMyAdmin)…
+0000.102 () Using direct MySQL access; value of use_mysqli is: 1
+0000.103 () SQL compatibility mode is: NO_AUTO_VALUE_ON_ZERO,
+0000.133 () Max packet size: 1024 MB
+0000.133 () Entering maintenance mode
+0000.133 () Activation du mode maintenance&#8230;
+0000.149 () Backup of: https://www.devacademie.org
+0000.149 () Content URL: https://www.devacademie.org/wp-content
+0000.149 () Uploads URL: https://www.devacademie.org/wp-content/uploads
+0000.150 () Old table prefix: wpb4_
+0000.150 () UpdraftPlus plugin slug: updraftplus/updraftplus.php
+0000.150 () Site information: multisite=0
+0000.150 () Site information: sql_mode=
+0000.151 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+0000.151 () New table prefix: zx_
+0000.156 () Processing table (InnoDB): wpb4_options - will restore as: zx_options
+0000.480 () Atomic restore: dropping original table (wpb4_options)
+0000.486 () Atomic restore: renaming new table (zx_options) to final table name (wpb4_options)
+0000.491 () Restoring prior UD configuration (table: wpb4_options; keys: 4)
+0000.504 () Processing table (InnoDB): wpb4_users - will restore as: zx_users
+0000.525 () Atomic restore: dropping original table (wpb4_users)
+0000.529 () Atomic restore: renaming new table (zx_users) to final table name (wpb4_users)
+0000.534 () Processing table (InnoDB): wpb4_usermeta - will restore as: zx_usermeta
+0000.582 () Atomic restore: dropping original table (wpb4_usermeta)
+0000.588 () Atomic restore: renaming new table (zx_usermeta) to final table name (wpb4_usermeta)
+0000.593 () Processing table (InnoDB): wpb4_actionscheduler_actions - will restore as: zx_actionscheduler_actions
+0000.620 () Atomic restore: dropping original table (wpb4_actionscheduler_actions)
+0000.625 () Atomic restore: renaming new table (zx_actionscheduler_actions) to final table name (wpb4_actionscheduler_actions)
+0000.631 () Processing table (InnoDB): wpb4_actionscheduler_claims - will restore as: zx_actionscheduler_claims
+0000.643 () Atomic restore: dropping original table (wpb4_actionscheduler_claims)
+0000.648 () Atomic restore: renaming new table (zx_actionscheduler_claims) to final table name (wpb4_actionscheduler_claims)
+0000.653 () Processing table (InnoDB): wpb4_actionscheduler_groups - will restore as: zx_actionscheduler_groups
+0000.667 () Atomic restore: dropping original table (wpb4_actionscheduler_groups)
+0000.671 () Atomic restore: renaming new table (zx_actionscheduler_groups) to final table name (wpb4_actionscheduler_groups)
+0000.676 () Processing table (InnoDB): wpb4_actionscheduler_logs - will restore as: zx_actionscheduler_logs
+0000.692 () Atomic restore: dropping original table (wpb4_actionscheduler_logs)
+0000.696 () Atomic restore: renaming new table (zx_actionscheduler_logs) to final table name (wpb4_actionscheduler_logs)
+0000.701 () Processing table (InnoDB): wpb4_commentmeta - will restore as: zx_commentmeta
+0000.715 () Atomic restore: dropping original table (wpb4_commentmeta)
+0000.721 () Atomic restore: renaming new table (zx_commentmeta) to final table name (wpb4_commentmeta)
+0000.726 () Processing table (InnoDB): wpb4_comments - will restore as: zx_comments
+0000.747 () Atomic restore: dropping original table (wpb4_comments)
+0000.752 () Atomic restore: renaming new table (zx_comments) to final table name (wpb4_comments)
+0000.757 () Processing table (InnoDB): wpb4_links - will restore as: zx_links
+0000.769 () Atomic restore: dropping original table (wpb4_links)
+0000.774 () Atomic restore: renaming new table (zx_links) to final table name (wpb4_links)
+0000.778 () Processing table (InnoDB): wpb4_postmeta - will restore as: zx_postmeta
+0000.842 () Atomic restore: dropping original table (wpb4_postmeta)
+0000.847 () Atomic restore: renaming new table (zx_postmeta) to final table name (wpb4_postmeta)
+0000.852 () Processing table (InnoDB): wpb4_posts - will restore as: zx_posts
+0001.078 () Database queries processed: 50 in 0.97 seconds
+0002.359 () Atomic restore: dropping original table (wpb4_posts)
+0002.369 () Database queries processed: 100 in 2.26 seconds
+0002.369 () Atomic restore: renaming new table (zx_posts) to final table name (wpb4_posts)
+0002.374 () Processing table (InnoDB): wpb4_term_relationships - will restore as: zx_term_relationships
+0002.386 () Atomic restore: dropping original table (wpb4_term_relationships)
+0002.390 () Atomic restore: renaming new table (zx_term_relationships) to final table name (wpb4_term_relationships)
+0002.395 () Processing table (InnoDB): wpb4_term_taxonomy - will restore as: zx_term_taxonomy
+0002.409 () Atomic restore: dropping original table (wpb4_term_taxonomy)
+0002.413 () Atomic restore: renaming new table (zx_term_taxonomy) to final table name (wpb4_term_taxonomy)
+0002.418 () Processing table (InnoDB): wpb4_termmeta - will restore as: zx_termmeta
+0002.432 () Atomic restore: dropping original table (wpb4_termmeta)
+0002.437 () Atomic restore: renaming new table (zx_termmeta) to final table name (wpb4_termmeta)
+0002.448 () Processing table (InnoDB): wpb4_terms - will restore as: zx_terms
+0002.474 () Atomic restore: dropping original table (wpb4_terms)
+0002.483 () Atomic restore: renaming new table (zx_terms) to final table name (wpb4_terms)
+0002.490 () Processing table (InnoDB): wpb4_frm_fields - will restore as: zx_frm_fields
+0002.508 () Atomic restore: dropping original table (wpb4_frm_fields)
+0002.514 () Atomic restore: renaming new table (zx_frm_fields) to final table name (wpb4_frm_fields)
+0002.519 () Processing table (InnoDB): wpb4_frm_forms - will restore as: zx_frm_forms
+0002.532 () Atomic restore: dropping original table (wpb4_frm_forms)
+0002.537 () Atomic restore: renaming new table (zx_frm_forms) to final table name (wpb4_frm_forms)
+0002.541 () Processing table (InnoDB): wpb4_frm_item_metas - will restore as: zx_frm_item_metas
+0002.558 () Atomic restore: dropping original table (wpb4_frm_item_metas)
+0002.564 () Atomic restore: renaming new table (zx_frm_item_metas) to final table name (wpb4_frm_item_metas)
+0002.569 () Processing table (InnoDB): wpb4_frm_items - will restore as: zx_frm_items
+0002.592 () Atomic restore: dropping original table (wpb4_frm_items)
+0002.597 () Atomic restore: renaming new table (zx_frm_items) to final table name (wpb4_frm_items)
+0002.601 () Processing table (InnoDB): wpb4_frmt_form_entry - will restore as: zx_frmt_form_entry
+0002.619 () Atomic restore: dropping original table (wpb4_frmt_form_entry)
+0002.624 () Atomic restore: renaming new table (zx_frmt_form_entry) to final table name (wpb4_frmt_form_entry)
+0002.629 () Processing table (InnoDB): wpb4_frmt_form_entry_meta - will restore as: zx_frmt_form_entry_meta
+0002.646 () Atomic restore: dropping original table (wpb4_frmt_form_entry_meta)
+0002.650 () Atomic restore: renaming new table (zx_frmt_form_entry_meta) to final table name (wpb4_frmt_form_entry_meta)
+0002.655 () Processing table (InnoDB): wpb4_frmt_form_reports - will restore as: zx_frmt_form_reports
+0002.666 () Atomic restore: dropping original table (wpb4_frmt_form_reports)
+0002.670 () Atomic restore: renaming new table (zx_frmt_form_reports) to final table name (wpb4_frmt_form_reports)
+0002.675 () Processing table (InnoDB): wpb4_frmt_form_views - will restore as: zx_frmt_form_views
+0002.693 () Atomic restore: dropping original table (wpb4_frmt_form_views)
+0002.697 () Atomic restore: renaming new table (zx_frmt_form_views) to final table name (wpb4_frmt_form_views)
+0002.705 () Processing table (InnoDB): wpb4_moodle_enrollment - will restore as: zx_moodle_enrollment
+0002.717 () Atomic restore: dropping original table (wpb4_moodle_enrollment)
+0002.726 () Atomic restore: renaming new table (zx_moodle_enrollment) to final table name (wpb4_moodle_enrollment)
+0002.734 () Processing table (InnoDB): wpb4_social_users - will restore as: zx_social_users
+0002.763 () Atomic restore: dropping original table (wpb4_social_users)
+0002.770 () Atomic restore: renaming new table (zx_social_users) to final table name (wpb4_social_users)
+0002.774 () Processing table (InnoDB): wpb4_um_metadata - will restore as: zx_um_metadata
+0002.784 () Skipped execution of SQL statement (unwanted or internally handled type=18): /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+0003.027 () Unlocking database and leaving maintenance mode
+0003.027 () Désactivation du mode maintenance&#8230;
+0003.027 () Atomic restore: dropping original table (wpb4_um_metadata)
+0003.033 () Atomic restore: renaming new table (zx_um_metadata) to final table name (wpb4_um_metadata)
+0003.039 () Finished: lines processed: 145 in 2.93 seconds
+0003.040 () Nettoyage…
+0003.041 () Begin search and replace (updraftplus_restored_db)
+0003.041 () [Database-replace-site-url] Base de données : recherche et remplacement de l’URL du site
+0003.041 () This option was not selected.
+0003.100 () Restore successful!
+0003.100 () Restore successful

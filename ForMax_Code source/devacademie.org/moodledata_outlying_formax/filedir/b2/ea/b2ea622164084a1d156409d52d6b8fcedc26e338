@@ -1,0 +1,81 @@
+// Quiz : Évaluation finale - Java EE
+
+::Q1:: Quelle est la différence principale entre un Session Bean Stateful et Stateless ?
+{
+=Le Stateful conserve l'état entre les appels du client, le Stateless non.
+~Le Stateless utilise une base de données, le Stateful non.
+~Le Stateless peut avoir une interface distante, le Stateful non.
+~Il n’y a aucune différence, les deux sont identiques.
+}
+
+::Q2:: À quoi sert l’annotation @PersistenceContext en Java EE ?
+{
+=Elle injecte un EntityManager pour la gestion des entités JPA.
+~Elle déclare un nouveau contexte de sécurité.
+~Elle configure un pool de connexions JDBC.
+~Elle permet de déclarer une Servlet.
+}
+
+::Q3:: Dans JAX-RS, l’annotation @Path est utilisée pour :
+{
+=Définir l’URL d’accès à une ressource REST
+~Indiquer une méthode de cycle de vie d’un Bean
+~Définir un fichier de configuration
+~Spécifier le rôle de sécurité
+}
+
+::Q4:: Quelle méthode HTTP est utilisée pour envoyer des données à une API REST dans JAX-RS ?
+{
+=POST
+~GET
+~DELETE
+~HEAD
+}
+
+::Q5:: Quelle est l’annotation utilisée pour déclarer une transaction obligatoire dans un EJB ?
+{
+=@TransactionAttribute(TransactionAttributeType.REQUIRED)
+~@Transactional(REQUIRED)
+~@PersistenceContext(REQUIRED)
+~@Required
+}
+
+::Q6:: Le rôle du fichier persistence.xml est de :
+{
+=Configurer l’unité de persistance pour JPA
+~Déclarer les EJBs dans l'application
+~Gérer les règles de sécurité dans Java EE
+~Créer les interfaces utilisateur
+}
+
+::Q7:: Quelle annotation est utilisée pour sécuriser l’accès à une méthode EJB ?
+{
+=@RolesAllowed
+~@Secured
+~@SecurityConstraint
+~@PermitAllOnly
+}
+
+::Q8:: Parmi les choix suivants, lequel n'est **pas** un type de bean EJB ?
+{
+=Controller Bean
+~Message-Driven Bean
+~Stateful Session Bean
+~Stateless Session Bean
+}
+
+::Q9:: Quelle API Java EE permet de manipuler les objets de base de données de manière orientée objet ?
+{
+=JPA
+~JDBC
+~JSP
+~JTA
+}
+
+::Q10:: Lequel des énoncés suivants décrit correctement JTA (Java Transaction API) ?
+{
+=Elle permet de gérer les transactions distribuées dans Java EE.
+~Elle permet d’analyser les templates HTML.
+~Elle permet de faire des appels distants.
+~Elle permet de gérer la persistance des données en XML.
+}

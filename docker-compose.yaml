@@ -1,0 +1,70 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: mysql-server
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+    # ports:         # <-- désactivé pour éviter conflit de port
+    #   - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+
+  wordpress-app:
+    image: wordpress:latest
+    container_name: wordpress-app
+    depends_on:
+      - db
+    ports:
+      - "8085:80"
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: rootpass
+      WORDPRESS_DB_NAME: sc3ighb1166_wpdevac
+    volumes:
+      - wordpress_data:/var/www/html
+    restart: always
+
+  moodle:
+    image: bitnami/moodle:4
+    container_name: moodle-app
+    depends_on:
+      - db
+    ports:
+      - "8888:8080"
+    environment:
+      MOODLE_DATABASE_TYPE: mysqli
+      MOODLE_DATABASE_HOST: db
+      MOODLE_DATABASE_PORT: 3306
+      MOODLE_DATABASE_NAME: sc3ighb1166_moodle
+      MOODLE_DATABASE_USER: root
+      MOODLE_DATABASE_PASSWORD: rootpass
+      MOODLE_USERNAME: admin
+      MOODLE_PASSWORD: Admin@123
+      MOODLE_EMAIL: admin@example.com
+      PHP_DATE_TIMEZONE: Europe/Paris
+    volumes:
+      - moodledata:/bitnami/moodledata
+    restart: always
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    depends_on:
+      - db
+    ports:
+      - "9091:80"
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: rootpass
+      UPLOAD_LIMIT: 64M
+    restart: always
+
+volumes:
+  db_data:
+  wordpress_data:
+  moodledata:
